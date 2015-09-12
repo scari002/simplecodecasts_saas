@@ -46,6 +46,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use devise for user auth  
 gem 'devise', '~> 3.4.1'
 
+# Use stripe for handling payments
+gem 'stripe', '~> 1.16.1'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -58,8 +61,7 @@ group :development, :test do
   
   
   
-  # Use stripe for handling payments
-  gem 'stripe', '~> 1.16.1'
+
   
   # Use figaro to hide secret keys
   gem 'figaro', '~> 1.0.0'
